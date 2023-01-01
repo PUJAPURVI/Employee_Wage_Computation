@@ -8,10 +8,11 @@ public class EmployeeWage {
         int WagePerHour = 20;
         int empHour;
         int empcheck = r.nextInt(3);
-        //UC1 To check the Employee Attendance
+    // UC4 Switch case used to check employee attendance status
         switch (empcheck) {
             case 0:
                 empHour=8;
+                //UC1 To check the Employee Attendance
             System.out.println("Employee is present For Full Time "+empHour+" hours. ");
             break;
             //UC3 Employee Wage For Part Time
