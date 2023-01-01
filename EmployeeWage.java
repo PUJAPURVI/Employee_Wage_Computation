@@ -7,14 +7,21 @@ public class EmployeeWage {
         Random r = new Random();
         int WagePerHour = 20;
         int empHour;
-        int empcheck = r.nextInt(2) + 1;
+        int empcheck = r.nextInt(3);
         //UC1 To check the Employee Attendance
-        if (empcheck == 1) {
-            empHour=8;
-            System.out.println("Employee is present");
-        } else {
+        switch (empcheck) {
+            case 0:
+                empHour=8;
+            System.out.println("Employee is present For Full Time "+empHour+" hours. ");
+            break;
+            //UC3 Employee Wage For Part Time
+            case 1:
+            empHour=4;
+                System.out.println("Employee is present For Part Time "+empHour+" hours.");
+                break;
+            default:
             empHour=0;
-            System.out.println("Employee Is Absent");
+            System.out.println("Employee Is Absent So No Salary For Him..");
         }
         //UC2 To Calculate the daily wage for present Employee
         int Wage = WagePerHour*empHour;
