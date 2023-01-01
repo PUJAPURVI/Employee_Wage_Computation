@@ -27,5 +27,12 @@ public class EmployeeWage {
         //UC2 To Calculate the daily wage for present Employee
         int Wage = WagePerHour*empHour;
         System.out.println("Employee Wage for one day is: "+Wage);
+        //uc5 to calculate monthly wage of employee
+        System.out.println("Enter number of working days in one month: ");
+        Scanner sc = new Scanner(System.in);
+        int workDays = sc.nextInt();
+        int monthlyWage = Wage*workDays;
+        int monthlyHour = empHour*workDays;
+        System.out.println("Employee monthly salary will be : "+monthlyWage);
     }
 }
