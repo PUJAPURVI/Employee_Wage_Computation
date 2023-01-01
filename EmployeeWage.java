@@ -34,5 +34,14 @@ public class EmployeeWage {
         int monthlyWage = Wage*workDays;
         int monthlyHour = empHour*workDays;
         System.out.println("Employee monthly salary will be : "+monthlyWage);
+        //uc6 to check if the Employee working hours or days meets the company requirements
+        if (workDays >=20 || monthlyHour >=100){
+            System.out.println("Worker work for 20 days or 100 hrs.");
+            System.out.println("The worker monthly Salary is: "+monthlyWage);
+        }
+        else{
+            System.out.println("Worker did not work for 20 days or 100 hrs.");
+            System.out.println("no salary for worker.");
+        }
     }
 }
